@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.template.defaultfilters import title
 
 from basketapp.models import Basket
 from .models import ProductCategory, Product
@@ -59,7 +60,7 @@ def contact(request):
         },
     )
 
-def basket(request):
+def basket(request, links_menu=None, pk=None):
     basket = []
     if request.user.is_authenticated:
         basket = Basket.objects.filter(user=request.user)

@@ -30,7 +30,10 @@
               <div class="text">
                 <img src="{% static 'img/icon-hover.png' %}" alt="hover">
                 <h4>{{ product.name }}</h4>
-                <p>{{ product.description }} </p>
+                <p>{{ product.description }}</p>
+                <h4>Цена: {{ product.price }}</h4>
+                <p>Со скидкой: {{ product.price_with_discount }}</p>
+                <p>Кол-во: {{ product.quantity }}</p>
               </div>
             </a>
           </div>

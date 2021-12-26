@@ -12,6 +12,7 @@ class ProductCategory(models.Model):
         return self.name
 
 class Product(models.Model):
+    objects = None
     name = models.CharField(verbose_name='имя', max_length=128, unique=True)
     description = models.TextField(verbose_name='описание', blank=True, null=True)
     category = ForeignKey(ProductCategory, on_delete=models.SET_NULL, null=True)

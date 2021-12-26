@@ -11,27 +11,30 @@
                 </a>
             </li>
         {% endfor %}
-    </ul>
-    <a href="#" class="search"></a>
-    <a href="{% url 'basket:view' %}" class="basket">
-        <span>
-            {% if basket %} {{ basket|length }} {% endif %}
-        </span>
-    </a>
-    {% if user.is_authenticated %}
         <li>
-            <a href="{% url 'auth:edit' %}">
-                {{ user.first_name|default:'Пользователь' }}
+            <a href="#" class="search"></a>
+        </li>
+        <li>
+            <a href="{% url 'basket:view' %}" class="basket">
+            <span>
+                {% if basket %} {{ basket|length }} {% endif %}
+            </span>
             </a>
         </li>
-    {% endif %}
-
-    {% if user.is_authenticated %}
-    <li>
-          <a href="{% url 'auth:logout' %}">выйти</a>
-        {% else %}
-          <a href="{% url 'auth:login' %}">войти</a>
-    </li>
+        {% if user.is_authenticated %}
+            <li>
+                <a href="{% url 'auth:edit' %}">
+                    {{ user.first_name|default:'Пользователь' }}
+                </a>
+            </li>
         {% endif %}
+        {% if user.is_authenticated %}
+            <li>
+                  <a href="{% url 'auth:logout' %}">выйти</a>
+                {% else %}
+                  <a href="{% url 'auth:login' %}">войти</a>
+            </li>
+        {% endif %}
+    </ul>
 </div>
 
