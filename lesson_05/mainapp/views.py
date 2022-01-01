@@ -40,15 +40,15 @@ def products(request, pk=None):
 
         return render(request, 'mainapp/products_list.html', content)
 
-        same_products = Product.objects.all()[3:5]
+    same_products = Product.objects.all()[3:5]
 
-        content = {
-            'title': title,
-            'links_menu': links_menu,
-            'same_products': same_products
-        }
+    content = {
+        'title': title,
+        'links_menu': links_menu,
+        'same_products': same_products
+    }
 
-        return render(request, 'mainapp/products.html', content)
+    return render(request, 'mainapp/products.html', content)
 
 
 def contact(request):
@@ -73,12 +73,12 @@ def basket(request, links_menu=None, pk=None):
             category = get_object_or_404(ProductCategory, pk=pk)
             products = Product.objects.filter(category__pk=pk).order_by('price')
 
-        content = {
-            'title': title,
-            'links_menu': links_menu,
-            'category': category,
-            'products': products,
-            'basket': basket,
-        }
+    content = {
+        'title': title,
+        'links_menu': links_menu,
+        'category': category,
+        'products': products,
+        'basket': basket,
+    }
 
     return render(request, 'mainapp/products_list.html', content)
