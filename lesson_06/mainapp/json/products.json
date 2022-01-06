@@ -1,0 +1,62 @@
+[
+  {
+    "category": "Лампы",
+    "name": "Лампа настенная",
+    "description": "Классная лампа",
+    "short_description": "Супер цена",
+    "price": 5000,
+    "price_with_discount": "4500",
+    "quantity": "65",
+    "image": "products_images/product-41.jpg"
+  },
+  {
+    "category": "Столы",
+    "name": "Стол из 90-х",
+    "description": "Стол из дерева",
+    "short_description": "Супер цена",
+    "price": 5000,
+    "price_with_discount": "4500",
+    "quantity": "65",
+    "image": "products_images/product-41.jpg"
+  },
+  {
+    "category": "Стулья",
+    "name": "Стул из 90-х",
+    "description": "Не оторваться",
+    "short_description": "Супер цена",
+    "price": 5000,
+    "price_with_discount": "4500",
+    "quantity": "65",
+    "image": "products_images/product-4.jpg"
+  },
+  {
+    "category": "Лампы",
+    "name": "Лампа из 90-х",
+    "description": "Классная лампа",
+    "short_description": "Супер цена",
+    "price": 4000,
+    "price_with_discount": "2500",
+    "quantity": "65",
+    "image": "products_images/product-5-sm.jpg"
+  },
+  {
+    "category": "Лампы",
+    "name": "Лампа настольная",
+    "description": "Классная лампа",
+    "short_description": "Супер цена",
+    "price": 5000,
+    "price_with_discount": "4500",
+    "quantity": "65",
+    "image": "products_images/product-31.jpg"
+  },
+  {
+    "category": "Диваны",
+    "name": "Диван тканевый",
+    "description": "для дома и офиса",
+    "short_description": "Супер цена",
+    "price": 5000,
+    "price_with_discount": "14500",
+    "quantity": "65",
+    "image": "products_images/product-3-sm.jpg"
+  }
+]
