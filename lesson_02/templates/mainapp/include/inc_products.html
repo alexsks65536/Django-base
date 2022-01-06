@@ -1,0 +1,11 @@
+{% for product in list_products %}
+<div class="block">
+	<a href="#"><img src="{{ product.pic_product }}" alt="">
+		<div class="text">
+			<img src="../static/img/icon-hover.png" alt="img">
+			<h4>{{ product.title_product }}</h4>
+			<p>{{ product.desc_product }}</p>
+		</div>
+	</a>
+</div>
+{% endfor %}
